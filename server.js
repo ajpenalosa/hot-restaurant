@@ -15,39 +15,8 @@ app.use(bodyParser.json());
 
 // Arrays to hold the data
 // =============================================================
-var reservations = [
-    {
-        name: "First Dude",
-        phone: "818-987-6543",
-        email: "email@email.com",
-        uniqueID: "KJI9878"
-    },
-    {
-        name: "Second Family",
-        phone: "654-986-3265",
-        email: "yup@gmail.com",
-        uniqueID: "KIK9654"
-    },
-    {
-        name: "Third Couple",
-        phone: "915-655-9635",
-        email: "hello@gmail.com",
-        uniqueID: "YUI9874"
-    }
-];
-var waitList = [
-    {
-        name: "First Dude",
-        phone: "818-987-6543",
-        email: "email@email.com",
-        uniqueID: "KJI9878"
-    },
-    {
-        name: "Second Family",
-        phone: "654-986-3265",
-        email: "yup@gmail.com",
-        uniqueID: "KIK9654"
-    }];
+var reservations = [];
+var waitList = [];
 
 // Routes
 // =============================================================
