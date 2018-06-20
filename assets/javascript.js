@@ -43,3 +43,23 @@ $.get("/api/waitlist", function(data) {
         $(".waiting-list").html("<h3>There are currently no reservations.</h3>");
     }
 });
+
+$("#btn-add").on("click",function(event){
+    event.preventDefault();
+    var add = {
+    name: $("#name").val(),
+    phone: $("#phone").val(),
+    email: $("#e-mail").val(),
+    uniqueID: $("#unique-id").val()
+    };
+    console.log(add);
+$.post("/api/tables", add).then(function(data){
+    console.log(data);
+    if (data.length < 5){
+    alert("added to reservation list")
+    }
+    else {
+    alert("reservation are full")
+    }
+    }); 
+});
